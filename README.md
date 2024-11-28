@@ -13,7 +13,7 @@
 
 ### O'rnatish Jarayoni
 
-1. "msys2-x86_64-20240113.exe" faylini yuklab oling
+1. https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe faylini yuklab oling
 2. .exe faylni ishga tushiring
 3. O'rnatish bosqichlarini bajaring:
    - O'rnatish papkasini tanlang (manzilni eslab qoling)
