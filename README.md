@@ -10,7 +10,7 @@ VS Code uchun C/C++ kengaytmasini o'rnating. C/C++ kengaytmasini Extensions (Ctr
 
 ### 2. MSYS2 O'rnatish
 
-1. MSYS2 dasturini o'rnating. Yuqorida joylashgan "msys2-x86_64-20240113.exe" nomli faylni yuklab oling va o'rnating.
+1. MSYS2 dasturini o'rnating. https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe orqali yuklab oling va o'rnating.
 2. .exe file ni ishga tushiring va o'rnatish bosqichlarini bajaring (hammasini next qilsayz bo'ladi).
 3. Ornatoyatganingizda o'zingiz xohlagan o'rnatish papkasini tanlang. Bu manzilni keyinroq ishlatish uchun eslab qoling.
    > Ko'p hollarda, tavsiya etilgan papka manzili to'g'ri keladi.
