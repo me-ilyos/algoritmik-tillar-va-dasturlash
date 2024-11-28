@@ -13,7 +13,7 @@
 
 ### O'rnatish Jarayoni
 
-1. https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe orqali yuklab oling
+1. "msys2-x86_64-20240113.exe" faylini yuklab oling
 2. .exe faylni ishga tushiring
 3. O'rnatish bosqichlarini bajaring:
    - O'rnatish papkasini tanlang (manzilni eslab qoling)
@@ -48,3 +48,25 @@ pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
 ### Muhim Eslatma
 
 ⚠️ Yangi PATH muhit o'zgaruvchisi ishga tushishi uchun barcha terminal oynalarini qayta ochishingiz kerak.
+
+## 4. C Dasturini Yaratish va Ishga Tushirish
+
+### Hello World Dasturi (C)
+
+1. Yangi fayl yarating:
+   - VS Code da yangi fayl yarating
+   - `hello.c` nomi bilan saqlang
+
+2. Quyidagi kodni `hello.c` fayliga yozing:
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+### C Dasturini Ishga Tushirish
+
+![MinGW-w64 Toolchain o'rnatish](run-play-button.png)
