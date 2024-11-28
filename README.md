@@ -1,23 +1,50 @@
-# C/C++ Dasturlash Muhitini Sozlash
+# C/C++ Development Environment Setup Guide
 
-## O'rnatish Bosqichlari
+## 1. VS Code uchun C/C++ Kengaytmasi
 
-### 1. VS Code C/C++ Kengaytmasi
+1. VS Code da C/C++ kengaytmasini o'rnating
+2. Extensions panelini oching (`Ctrl+Shift+X`)
+3. Qidiruv maydoniga 'C++' deb yozing
+4. Kengaytmani o'rnating
 
-VS Code uchun C/C++ kengaytmasini o'rnating. C/C++ kengaytmasini Extensions (Ctrl+Shift+X) bo'limida 'C++' deb qidirib o'rnatishingiz mumkin.
+![VS Code C/C++ kengaytmasi](cpp-extension.png)
 
-![VS Code kengaytmasi](cpp-extension.png)
+## 2. MSYS2 ni O'rnatish
 
-### 2. MSYS2 O'rnatish
+### O'rnatish Jarayoni
 
-1. MSYS2 dasturini o'rnating. https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe orqali yuklab oling va o'rnating.
-2. .exe file ni ishga tushiring va o'rnatish bosqichlarini bajaring (hammasini next qilsayz bo'ladi).
-3. Ornatoyatganingizda o'zingiz xohlagan o'rnatish papkasini tanlang. Bu manzilni keyinroq ishlatish uchun eslab qoling.
-   > Ko'p hollarda, tavsiya etilgan papka manzili to'g'ri keladi.
-4. O'rnatish tugagandan so'ng, **Run MSYS2 now** katakchasini belgilangan holda qoldiring va **Finish** tugmasini bosing. Bu sizga MSYS2 terminal oynasini ochib beradi.
+1. "msys2-x86_64-20240113.exe" faylini yuklab oling
+2. .exe faylni ishga tushiring
+3. O'rnatish bosqichlarini bajaring:
+   - O'rnatish papkasini tanlang (manzilni eslab qoling)
+   - Standart sozlamalar uchun "Next" tugmasini bosing
+4. O'rnatish yakunida:
+   - "Run MSYS2 now" katakchasini belgilangan holda qoldiring
+   - "Finish" tugmasini bosing
 
-### 3. MinGW-w64 Toolchain O'rnatish
+### MinGW-w64 Toolchain ni O'rnatish
 
-1. Ushbu terminalda, quyidagi buyruqni ishga tushirish orqali MinGW-w64 toolchain dasturini o'rnating:
-   ```bash
-   pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+1. Ochilgan MSYS2 terminalida quyidagi buyruqni kiriting:
+```bash
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+```
+2. So'ralgan savolga "Enter" tugmasini bosing
+3. Tasdiqlash uchun "y" harfini kiritib, "Enter" ni bosing
+
+![MinGW-w64 Toolchain o'rnatish](cpp-install-MSYS2-toolchain.jpg)
+
+## 3. PATH Muhit O'zgaruvchisini Sozlash
+
+1. Windows qidiruv panelida "Settings" ni oching
+2. "Edit environment variables for your account" ni qidiring
+3. PATH o'zgaruvchisini sozlash:
+   - "User variables" bo'limida "Path" ni tanlang
+   - "Edit" tugmasini bosing
+   - "New" tugmasini bosing
+   - MinGW-w64 papka manzilini qo'shing:
+     - Standart manzil: `C:\msys64\ucrt64\bin`
+   - "OK" tugmasini bosing
+
+### Muhim Eslatma
+
+⚠️ Yangi PATH muhit o'zgaruvchisi ishga tushishi uchun barcha terminal oynalarini qayta ochishingiz kerak.
